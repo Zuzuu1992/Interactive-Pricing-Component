@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  row-gap: 20px;
+  background-image: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+}
+
+.title-box {
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-box h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: #293356;
+  margin-bottom: 10px;
+  margin-top: 89px;
+}
+
+.title-box p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  color: #848ead;
+}
+
+.last-p {
+  margin-bottom: 64px;
+}
+
+.main-box {
+  width: 90%;
+  padding: 34px 0px 32px 0px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  margin-bottom: 88px;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+
+.page-views,
+.page-views span {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.71px;
+  text-transform: uppercase;
+  color: #848ead;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.price span {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+
+.price-box p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #848ead;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #848ead;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848ead;
+}
+
+.billing-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.slider-container {
+  width: 86%;
+  position: relative;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 8px;
+  border-radius: 5px;
+  background: #a4f3eb;
+  width: 50%;
+  z-index: 1;
+}
+
+.range::-webkit-inner-spin-button {
+  border: 2px solid red;
+  background: #24aea1;
+}
+
+.range {
+  background: #ecf0fb;
+  outline: none;
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background: #10d8c4;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.range::-webkit-slider-thumb:hover {
+  background-color: #7aeadf;
+}
+
+.range::-webkit-slider-thumb:active {
+  background-color: #24aea1;
+}
+
+.check-box-entire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #cfd8ef;
+  width: 43px;
+  height: 22px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 4px;
+  transition: all 0.3s;
+}
+
+#check:checked + .button {
+  background-color: #7aeadf;
+}
+
+#check:checked + .button::before {
+  transform: translateX(20px);
+}
+
+#check {
+  display: none;
+}
+
+.discount {
+  background-color: #feede8;
+  border-radius: 9.5px;
+  padding: 2px 7px;
+}
+
+.discount p {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #ff8d68;
+}
+
+.discount span {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ecf0fb;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 33px;
+}
+
+.ticks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 11px;
+}
+
+.ticks div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+.ticks div p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848ead;
+}
+
+.start-trial-btn {
+  background-color: #293356;
+  padding: 12px 46px;
+  border-radius: 20.5px;
+  border: none;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #becdff;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background-size: 100% 449px;
+  }
+
+  .main-box {
+    width: 540px;
+    position: relative;
+    align-items: flex-start;
+    padding-left: 46px;
+    padding-right: 46px;
+    margin-bottom: 137px;
+  }
+
+  .title-box h1 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 104px;
+  }
+
+  .p-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 82px;
+    column-gap: 6px;
+  }
+
+  .p-wrap p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .last-p {
+    margin-bottom: 0;
+  }
+
+  .page-views,
+  .page-views span {
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+
+  .price-box {
+    position: absolute;
+    top: 0;
+    right: 48px;
+    margin-top: 50px;
+  }
+
+  .price {
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -1px;
+  }
+
+  .price-box p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .billing-info {
+    align-self: flex-end;
+    padding-right: 24px;
+    padding-top: 17px;
+    column-gap: 16px;
+  }
+
+  .discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+  }
+
+  .discount span {
+    display: block;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #ff8d68;
+  }
+
+  .line {
+    width: 120%;
+    margin-left: -45px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 121px;
+  }
+
+  .ticks {
+    align-items: flex-start;
+  }
+}

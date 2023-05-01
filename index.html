@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive pricing component</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-box">
+        <h1>Simple, traffic-based pricing</h1>
+        <div class="p-wrap">
+          <p>Sign-up for our 30-day trial.</p>
+          <p class="last-p">No credit card required.</p>
+        </div>
+      </div>
+      <div class="main-box">
+        <p class="page-views"><span>100K</span> Pageviews</p>
+        <div class="slider-container">
+          <div class="progress-bar"></div>
+          <input
+            type="range"
+            class="range"
+            name="range"
+            min="1"
+            max="5"
+            value="3"
+          />
+        </div>
+        <div class="price-box">
+          <p class="price"><span>$<span id="indicator">16</span>.00</span></p>
+          <p class="month">/ month</p>
+        </div>
+
+        <div class="billing-info">
+          <p class="label">Monthly Billing</p>
+          <div class="check-box-entire">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check" class="button"></label>
+          </div>
+          <p class="label">Yearly Billing</p>
+          <div class="discount">
+            <p>25%</p>
+            <span>discount</span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <footer>
+          <div class="ticks">
+            <div>
+              <img src="images/icon-check.svg" alt="Check mark" />
+              <p>Unlimited websites</p>
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="Check mark" />
+              <p>100% data ownership</p>
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="Check mark" />
+              <p>Email reports</p>
+            </div>
+          </div>
+          <button class="start-trial-btn">Start my trial</button>
+        </footer>
+      </div>
+    </div>
+       
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ana Izoria</a>.
+
+    <script src="script.js"></script>
+  </body>
+</html>
